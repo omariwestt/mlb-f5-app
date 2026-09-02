@@ -1,6 +1,8 @@
 import requests
+import streamlit as st
 
-API_KEY = "a80448a804a490887a03d0cc1ad8597f"
+# Leer la API Key de forma segura desde los Secrets de Streamlit
+API_KEY = st.secrets["ODDS_API_KEY"]
 SPORT = "baseball_mlb"
 REGIONS = "us"
 
